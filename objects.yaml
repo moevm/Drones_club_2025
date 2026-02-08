@@ -1,0 +1,52 @@
+default:
+  - kind: cube_with_dog
+    urdf: cube_with_dog.urdf
+    position: [1.5, 1.5, 0.5]
+    euler_orientation: [0, 0, 0]
+    global_scaling: 1
+
+
+  - kind: cube_with_dog_too
+    urdf: cube_with_dog.urdf
+    texture: tag.png
+    position: [-1.1, 1, 0.5]
+    euler_orientation: [0, 0, 0]
+    global_scaling: 1
+
+
+city:
+  - kind: city
+    urdf: beautiful_city/beautiful_city.urdf
+    position: [1, 1, 0]
+    euler_orientation: [1.57, 0, 0]
+    global_scaling: 1
+
+  
+simple_house:
+  - kind: simple_house
+    urdf: home/home.urdf
+    position: [0, 3, 0]
+    euler_orientation: [1.57, 0, 0]
+    global_scaling: 1
+
+simple_houses:
+  - kind: simple_house
+    urdf: home/home.urdf
+    position: [0, 3, 0]
+    euler_orientation: [1.57, 0, 0]
+    global_scaling: .5
+
+  - kind: simple_house
+    urdf: home/home.urdf
+    position: [2, 7, 0]
+    euler_orientation: [1.57, 0, 0]
+    global_scaling: 1
+
+  - kind: simple_house
+    urdf: home/home.urdf
+    position: [-5, -3, 0]
+    euler_orientation: [1.57, 0, 0]
+    global_scaling: 2
+
+# For Photos
+# python main.py --decision_name=SimpleOverflight_multy --experiment_name=<name> --save_images=True --vision_attributes=True
