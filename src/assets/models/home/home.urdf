@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot name="object">
+ <link name="link">
+    <visual>
+      <geometry>
+        <mesh filename="home.obj"/>
+      </geometry>
+      <material name="material">
+        <texture filename="home.mtl"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="home.obj"/>
+      </geometry>
+    </collision>
+ </link>
+</robot>
